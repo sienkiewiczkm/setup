@@ -36,4 +36,6 @@
   * [ ] Set default shell
     * [ ] Add `/usr/local/bin/zsh` to `/etc/shells`
     * [ ] `chsh -s /usr/local/bin/zsh`
+* [ ] Configurations
+  * [ ] Run `bash osx/vscode.sh`
 * [ ] Reboot
