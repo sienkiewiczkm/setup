@@ -1,0 +1,10 @@
+christian-kohler.npm-intellisense
+christian-kohler.path-intellisense
+DavidAnson.vscode-markdownlint
+dbaeumer.vscode-eslint
+dracula-theme.theme-dracula
+eg2.vscode-npm-script
+goessner.mdmath
+streetsidesoftware.code-spell-checker
+vscode-icons-team.vscode-icons
+vscodevim.vim
