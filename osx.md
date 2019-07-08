@@ -15,6 +15,7 @@
     * [ ] python
     * [ ] python@2
     * [ ] node
+    * [ ] tree
   * casks
     * [ ] iterm2
     * [ ] visual-studio-code
@@ -23,6 +24,8 @@
     * [ ] virtualbox
     * [ ] virtualbox-extension-pack
     * [ ] Fonts
+      * [ ] font-noto-emoji ????
+      * [ ] font-iosevka
       * [ ] font-hack-nerd-font
       * [ ] font-iosevka-nerd-font-mono
       * [ ] font-iosevka-nerd-font
