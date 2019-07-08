@@ -3,6 +3,7 @@
 * [ ] Install Xcode command line tools: `xcode-select --install`
 * [ ] Set modifier keys for keyboard: set Caps Lock to Control (Settings > Keyboard > Modifier keys)
 * [ ] Generate new SSH keys and add them to the agent ([GitHub guide](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent))
+* [ ] Disable *Add full stop with double space* in Keyboard > Text settings
 * [ ] Install [Homebrew](http://brew.sh)
   * [ ] (?) Problems with permissions may occur, use: `sudo chown -R $(whoami) $(brew --prefix)/*`
   * [ ] Add taps:
@@ -16,9 +17,13 @@
     * [ ] python@2
     * [ ] node
     * [ ] tree
+    * [ ] reattach-to-user-namespace  # enables clipboard access from tmux
   * casks
+    * [ ] coconutbattery  # battery status
+    * [ ] skitch  # screenshot annotaton
     * [ ] iterm2
     * [ ] visual-studio-code
+    * [ ] keka  # archives
     * [ ] firefox
     * [ ] google-chrome
     * [ ] virtualbox
