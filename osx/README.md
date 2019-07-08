@@ -1,4 +1,8 @@
-# Guide for MacOSX setup
+# OSX Configuration
+
+This directory contains automated scripts for MacOS system setup and guides specific to this system.
+
+## Manual tasks
 
 * [ ] Install Xcode command line tools: `xcode-select --install`
 * [ ] Set modifier keys for keyboard: set Caps Lock to Control (Settings > Keyboard > Modifier keys)
