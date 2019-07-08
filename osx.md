@@ -34,6 +34,7 @@
       * [ ] font-hack-nerd-font
       * [ ] font-iosevka-nerd-font-mono
       * [ ] font-iosevka-nerd-font
+* [ ] Install amphetamine
 * [ ] Install using pip
   * [ ] virtualenv
   * [ ] virtualenvwrapper
