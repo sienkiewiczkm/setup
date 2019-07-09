@@ -49,6 +49,7 @@ This directory contains automated scripts for MacOS system setup and guides spec
   * [ ] Set default shell
     * [ ] Add `/usr/local/bin/zsh` to `/etc/shells`
     * [ ] `chsh -s /usr/local/bin/zsh`
+* [ ] Set **iTerm** color scheme to [Dracula](https://draculatheme.com/iterm/)
 * [ ] Configurations
   * [ ] Run `bash osx/vscode.sh`
 * [ ] Reboot
