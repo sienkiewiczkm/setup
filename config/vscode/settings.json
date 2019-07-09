@@ -16,6 +16,11 @@
 
     "todo-tree.tags": ["TODO", "FIXME", "HACK"],
     "todo-tree.customHighlight": {
+        "FIXME": {
+            "icon": "tools",
+            "foreground": "yellow",
+            "type": "text-and-comment"
+        },
         "HACK": {
             "icon": "alert",
             "foreground": "#cc0000",
