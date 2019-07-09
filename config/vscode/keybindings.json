@@ -1,0 +1,6 @@
+[
+  {
+    "key": "ctrl+alt+cmd+k",
+    "command": "bookmarks.toggleLabeled"
+  }
+]

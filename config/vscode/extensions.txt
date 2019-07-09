@@ -1,10 +1,13 @@
+alefragnani.Bookmarks
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
 DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
 dracula-theme.theme-dracula
+eamodio.gitlens
 eg2.vscode-npm-script
 goessner.mdmath
+Gruntfuggly.todo-tree
 streetsidesoftware.code-spell-checker
 vscode-icons-team.vscode-icons
 vscodevim.vim
