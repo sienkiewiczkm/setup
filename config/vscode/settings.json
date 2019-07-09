@@ -35,7 +35,10 @@
         "Menlo",
         "gitlens",
         "monospace",
-        "tmux"
+        "popd",
+        "pushd",
+        "tmux",
+        "virtualenv"
     ]
 
 }
