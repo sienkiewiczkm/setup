@@ -24,6 +24,7 @@ This directory contains automated scripts for MacOS system setup and guides spec
     * [ ] reattach-to-user-namespace  # enables clipboard access from tmux
   * casks
     * [ ] coconutbattery  # battery status
+    * [ ] xquartz  # for X11 forwarding
     * [ ] skitch  # screenshot annotaton
     * [ ] iterm2
     * [ ] visual-studio-code

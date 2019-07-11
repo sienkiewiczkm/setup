@@ -15,14 +15,17 @@ brew install git
 brew install neovim
 brew install reattach-to-user-namespace  # required by tmux config
 brew install tmux
+brew install wget
 brew install zsh
 
 brew cask install db-browser-for-sqlite
 brew cask install font-iosevka
 brew cask install iterm2
+brew cask install paintbrush
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
 brew cask install visual-studio-code
+brew cask install xquartz  # X Window System (useful for X11 forwarding)
 
 # Utilities
 # ---------

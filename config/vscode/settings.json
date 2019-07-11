@@ -37,6 +37,7 @@
         "monospace",
         "popd",
         "pushd",
+        "symlinks",
         "tmux",
         "virtualenv"
     ]
