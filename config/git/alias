@@ -1,0 +1,4 @@
+[alias]
+  co = checkout
+  st = status
+  undo-commit = reset --soft HEAD~1
