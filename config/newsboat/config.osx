@@ -1,0 +1,48 @@
+# ~/.newsboat/config
+
+
+# Downloading feeds
+
+auto-reload yes
+reload-time 120
+reload-threads 4
+download-retries 4
+download-timeout 10
+prepopulate-query-feeds yes
+cleanup-on-quit yes
+confirm-exit yes
+text-width 120
+
+
+# Colors
+
+color info white black bold
+color listnormal_unread yellow default
+color listfocus default default reverse bold
+color listfocus_unread default default reverse bold
+
+
+# Display settings
+
+show-read-feeds yes
+feed-sort-order unreadarticlecount -desc
+mark-as-read-on-hover no
+
+
+# Keybindings
+
+bind-key j down feedlist
+bind-key k up feedlist
+
+bind-key j next articlelist
+bind-key k prev articlelist
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+
+bind-key j down article
+bind-key k up article
+
+
+#  Platform specific stuff
+
+browser "open -g -a 'Firefox' %u"

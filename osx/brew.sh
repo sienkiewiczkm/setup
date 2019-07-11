@@ -46,7 +46,9 @@ brew cask install tunnelblick  # VPN client
 # Entertainment & Misc
 # --------------------
 
+brew install newsboat # RSS client
+
 brew cask install steam
-brew cask install vienna  # RSS client
+brew cask install vienna  # RSS client - consider removal in favor of newsboat
 brew cask install vlc
 
