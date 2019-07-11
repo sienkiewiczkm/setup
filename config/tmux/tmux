@@ -3,6 +3,8 @@ set -g default-terminal "screen-256color"
 # enables pbcopy, pbcopy features on OSX
 set-option -g default-command "reattach-to-user-namespace -l zsh"
 
+setw -g mouse on
+
 set-option -sg escape-time 10
 
 set -g base-index 1
