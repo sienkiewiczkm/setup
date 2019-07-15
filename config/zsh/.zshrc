@@ -26,8 +26,8 @@ SPACESHIP_TIME_SHOW=true
 SPACESHIP_EXIT_CODE_SHOW=true
 
 # Default tools
-EDITOR=nvim
-VISUAL=nvim
+export EDITOR=nvim
+export VISUAL=nvim
 
 # Editing longs commands in vim
 autoload -U edit-command-line
