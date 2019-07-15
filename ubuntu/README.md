@@ -1,5 +1,17 @@
 # Ubuntu configuration
 
+## Minimal `ssh` setup
+
+```Bash
+# clone this repo first to ~/setup
+sudo apt install zsh
+chsh -s /usr/bin/zsh <user>
+git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
+ln -s /home/<user>/setup/config/zsh/.zshrc ~/.zshrc
+```
+
+## Notes
+
 Prior to installation ensure you have a ethernet cable, wifi may not work initially
 
 Install Ubuntu with recommended settings, encrypt home if possible.
