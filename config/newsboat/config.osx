@@ -44,6 +44,15 @@ bind-key K prev-feed articlelist
 bind-key j down article
 bind-key k up article
 
+bind-key o open-in-browser-and-mark-read
+bind-key O open-in-browser
+
+bind-key r reload-all
+bind-key R reload
+
+bind-key o open feedlist
+bind-key t mark-feed-read
+
 
 #  Platform specific stuff
 
