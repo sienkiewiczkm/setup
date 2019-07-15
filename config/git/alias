@@ -2,5 +2,5 @@
   co = checkout
   st = status
   undo-commit = reset --soft HEAD~1
-  lg = log --graph --format='%C(bold white)%h%Creset %C(bold red)%s%Creset %C(dim white)%ar by %ae%C(dim blue)%d%Creset'
-  lgd = log --graph --format='%C(bold white)%h%Creset %C(dim white)%ar by %ae%C(dim blue)%d%Creset%n%C(bold red)%s%n%b'
+  lg = log --graph --format='%C(bold white)%h%Creset %C(bold red)%s%Creset %C(dim white)%ar by %ae%Creset%Cblue%d%Creset'
+  lgd = log --graph --format='%C(bold white)%h%Creset %C(dim white)%ar by %ae%Creset%Cblue%d%Creset%n%C(bold red)%s%n%b'
