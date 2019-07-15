@@ -10,6 +10,7 @@
     "explorer.sortOrder": "filesFirst",
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 2000,
+    "window.zoomLevel": 0,
     "workbench.colorTheme": "Dracula",
     "workbench.iconTheme": "vscode-icons",
     "workbench.tree.indent": 12,
