@@ -39,6 +39,10 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 
+# Aliases
+alias ..='cd ../'
+
+
 # Source work configuration files (may contain client secrets)
 # (N) removes `zsh: no matches found` warning
 for cfgFile in ~/.zshrc.work.*(N) ; do
