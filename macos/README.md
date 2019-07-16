@@ -1,6 +1,11 @@
-# OSX Configuration
+# MacOS Configuration
 
 This directory contains automated scripts for MacOS system setup and guides specific to this system.
+
+## Automated install sketch
+
+```Bash
+```
 
 ## Manual tasks
 

@@ -1,6 +1,6 @@
 # OS Configurations
 
-## [MacOS](osx/README.md)
+## [MacOS](macos/README.md)
 Quick setup:
 
 ```sh
