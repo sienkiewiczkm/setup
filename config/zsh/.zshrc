@@ -41,6 +41,7 @@ export LANG=en_US.UTF-8
 
 # Aliases
 alias ..='cd ../'
+alias e='exa'
 
 
 # Source work configuration files (may contain client secrets)

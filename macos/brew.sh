@@ -33,6 +33,7 @@ brew cask install xquartz  # X Window System (useful for X11 forwarding)
 mas install 937984704  # Amphetamine
 mas install 441258766  # Magnet
 
+brew install exa  # ls replacement
 brew install insect  # scientific calculator
 
 brew cask install clipy  # clipboard manager
