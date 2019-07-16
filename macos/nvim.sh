@@ -8,6 +8,8 @@
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+mkdir -p ~/.config/nvim
+
 # Create symlink for the configuration
 pushd "`dirname "$0"`/../config"
 ln -s $(pwd)/nvim ~/.config/nvim

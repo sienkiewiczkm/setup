@@ -22,7 +22,7 @@ brew install mas  # MacOS store CLI interface
 
 brew install curl
 brew install git  # Xcode command line tools may have old version
-brew install neovim
+brew install nvim  # neovim
 brew install reattach-to-user-namespace  # required by tmux config
 brew install tmux
 brew install wget
