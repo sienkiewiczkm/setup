@@ -5,9 +5,18 @@ This directory contains automated scripts for MacOS system setup and guides spec
 ## Manual tasks
 
 * [ ] Install Xcode command line tools: `xcode-select --install`
-* [ ] Set modifier keys for keyboard: set Caps Lock to Control (Settings > Keyboard > Modifier keys)
+* [ ] Setup MacOS preferences
+  * Keyboard
+    * [ ] Set modifier keys for **all** keyboards: map Caps Lock to Control (in *Modifier keys*)
+    * [ ] Disable *Add full stop with double space* in *Text settings*
+  * [ ] Mission Control
+    * [ ] Uncheck *Automatically rearrange Spaces based on most recent use*.
+    * [ ] Check *Group windows by application*
+  * [ ] Security and Privacy
+    * [ ] Set timeout for password requirement to *immediately*.
+    * [ ] Ensure FileVault is enabled.
+
 * [ ] Generate new SSH keys and add them to the agent ([GitHub guide](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent))
-* [ ] Disable *Add full stop with double space* in Keyboard > Text settings
 * [ ] Install [Homebrew](http://brew.sh)
   * [ ] (?) Problems with permissions may occur, use: `sudo chown -R $(whoami) $(brew --prefix)/*`
   * [ ] Add taps:
