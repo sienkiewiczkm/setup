@@ -2,6 +2,16 @@
 
 # TODO: Install Homebrew if not installed.
 
+# Taps
+brew tap homebrew/cask-fonts
+
+# Fonts
+# -----
+
+brew cask install font-iosevka
+brew cask install font-iosevka-nerd-font
+brew cask install font-iosevka-nerd-font-mono
+
 # Software sources
 # ----------------
 
@@ -19,7 +29,6 @@ brew install wget
 brew install zsh
 
 brew cask install db-browser-for-sqlite
-brew cask install font-iosevka
 brew cask install iterm2
 brew cask install paintbrush
 brew cask install virtualbox
