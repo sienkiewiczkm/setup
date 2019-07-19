@@ -3,6 +3,7 @@
     "editor.codeLens": false,
     "editor.fontFamily": "Iosevka Nerd Font, Iosevka, Menlo, monospace",
     "editor.fontSize": 13,
+    "editor.lineNumbers": "relative",
     "editor.renderWhitespace": "boundary",
     "editor.rulers": [80, 120],
     "editor.tabSize": 2,
@@ -36,14 +37,16 @@
     },
 
     "cSpell.userWords": [
-        "Iosevka",
-        "Menlo",
+        "easymotion",
         "gitlens",
+        "iosevka",
+        "menlo",
         "monospace",
         "popd",
         "pushd",
         "symlinks",
         "tmux",
+        "tunnelblick",
         "virtualenv"
     ]
 
