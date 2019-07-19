@@ -16,32 +16,6 @@ Prior to installation ensure you have a ethernet cable, wifi may not work initia
 
 Install Ubuntu with recommended settings, encrypt home if possible.
 
-Ubuntu installs:
-
-- package manager
-  - neovim
-  - tmux
-  - git
-  - virutalenv - not sure if best source ?
-  - zsh
-  - gnome-tweak-tool - system tweaks
-  - xclip - clipboard in the command line
-  - curl
-
-- through terminal, but not directly
-  - nodejs (use [nodesource distributions](https://github.com/nodesource/distributions))
-
-    ```sh
-    curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-    sudo apt-get install -y nodejs
-    ```
-
-  - [alacritty](https://github.com/jwilm/alacritty) - terminal emulator
-
-- install by hand:
-  - visual studio code
-  - virtual box
-
 Setup encryption of home folder if skipped:
 [Guide](https://www.howtogeek.com/116032/how-to-encrypt-your-home-folder-after-installing-ubuntu/)
 

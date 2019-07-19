@@ -1,0 +1,29 @@
+---
+
+all:
+  packages:
+    - curl
+    - git
+    - neovim
+    - tmux
+    - xclip  # clipboard support in 
+    - zsh
+
+
+ubuntu:
+  packages:
+    - gnome-tweak-tool  # system tweaks: keyboard re-mapping etc.
+
+  manual:
+    - nodejs:
+      url: https://github.com/nodesource/distributions
+      comment: |-
+        curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+        sudo apt-get install -y nodejs
+
+    - alacritty: # terminal emulator
+      url: https://github.com/jwilm/alacritty 
+
+    - virtual box
+    - virtualenv
+    - visual studio code
