@@ -5,6 +5,14 @@ This directory contains automated scripts for MacOS system setup and guides spec
 ## Automated install sketch
 
 ```Bash
+# clone the setup repository
+# install homebrew
+# run scripts in macros/ directory starting from brew.sh
+# ensure `/etc/shells` contains `$(which zsh)` (eg. `/usr/local/bin/zsh`)
+# bash -c 'echo "$(which zsh)" >> /etc/shells'
+chsh -s "$(which zsh)" "$(wh
+
+
 # Set default screenshots directory to separate folder
 mkdir -p ~/Screenshots
 defaults write com.apple.screencapture location ~/Screenshots/
