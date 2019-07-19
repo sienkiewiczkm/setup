@@ -5,4 +5,4 @@ help:
 vscode-update-ext: ## update Visual Studio Code extension list
 	code --list-extensions > ./config/vscode/extensions.txt
 
-.PHONY = vscode-update-ext
+.PHONY: vscode-update-ext
