@@ -5,6 +5,9 @@ This directory contains automated scripts for MacOS system setup and guides spec
 ## Automated install sketch
 
 ```Bash
+# Set default screenshots directory to separate folder
+mkdir -p ~/Screenshots
+defaults write com.apple.screencapture location ~/Screenshots/
 ```
 
 ## Manual tasks
