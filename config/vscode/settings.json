@@ -20,6 +20,16 @@
     "workbench.iconTheme": "vscode-icons",
     "workbench.tree.indent": 12,
 
+    "vim.camelCaseMotion.enable": true,
+    "vim.easymotion": true,
+    "vim.easymotionMarkerBackgroundColor": "#222",
+    "vim.easymotionMarkerFontFamily": "Iosevka Nerd Font, Iosevka, Menlo, monospace",
+    "vim.easymotionMarkerFontSize": 14,
+    "vim.easymotionMarkerFontWeight": 500,
+    "vim.easymotionMarkerForegroundColorOneChar": "#f0f",
+    "vim.easymotionMarkerForegroundColorTwoChar": "#f0f",
+    "vim.easymotionMarkerHeight": 18,
+
     "todo-tree.tags": ["TODO", "FIXME", "HACK"],
     "todo-tree.customHighlight": {
         "FIXME": {
