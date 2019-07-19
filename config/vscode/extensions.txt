@@ -8,6 +8,10 @@ eamodio.gitlens
 eg2.vscode-npm-script
 goessner.mdmath
 Gruntfuggly.todo-tree
+ms-python.python
+redhat.vscode-yaml
+richie5um2.vscode-sort-json
 streetsidesoftware.code-spell-checker
+Tyriar.sort-lines
 vscode-icons-team.vscode-icons
 vscodevim.vim
