@@ -29,6 +29,7 @@
     "vim.easymotionMarkerForegroundColorOneChar": "#f0f",
     "vim.easymotionMarkerForegroundColorTwoChar": "#f0f",
     "vim.easymotionMarkerHeight": 18,
+    "vim.useSystemClipboard": true,
 
     "todo-tree.tags": ["TODO", "FIXME", "HACK"],
     "todo-tree.customHighlight": {
