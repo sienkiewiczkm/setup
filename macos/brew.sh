@@ -39,8 +39,10 @@ brew cask install xquartz  # X Window System (useful for X11 forwarding)
 # Utilities
 # ---------
 
+brew install fzf  # fuzzy finder
 brew install exa  # ls replacement
 brew install insect  # scientific calculator
+brew install the_silver_searcher  # code searching tool similar to ack, with a focus on speed
 
 brew cask install clipy  # clipboard manager
 brew cask install coconutbattery  # battery status viewer
