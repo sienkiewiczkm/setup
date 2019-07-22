@@ -65,3 +65,14 @@ brew cask install steam
 brew cask install vienna  # RSS client - consider removal in favor of newsboat
 brew cask install vlc
 
+
+# Under consideration / to-do list
+# --------------------------------
+
+# brew install python
+# brew install python@2
+# brew install pyenv
+
+# brew cask install skitch  # screenshots annotation
+
+# node

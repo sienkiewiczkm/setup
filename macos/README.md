@@ -35,36 +35,6 @@ defaults write com.apple.screencapture location ~/Screenshots/
 * [ ] Generate new SSH keys and add them to the agent ([GitHub guide](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent))
 * [ ] Install [Homebrew](http://brew.sh)
   * [ ] (?) Problems with permissions may occur, use: `sudo chown -R $(whoami) $(brew --prefix)/*`
-  * [ ] Add taps:
-    * [ ] `brew tap homebrew/cask-fonts`
-* [ ] Install using Homebrew:
-  * normal
-    * [ ] zsh
-    * [ ] neovim
-    * [ ] tmux
-    * [ ] python
-    * [ ] python@2
-    * [ ] node
-    * [ ] tree
-    * [ ] reattach-to-user-namespace  # enables clipboard access from tmux
-  * casks
-    * [ ] coconutbattery  # battery status
-    * [ ] xquartz  # for X11 forwarding
-    * [ ] skitch  # screenshot annotaton
-    * [ ] iterm2
-    * [ ] visual-studio-code
-    * [ ] keka  # archives
-    * [ ] firefox
-    * [ ] google-chrome
-    * [ ] virtualbox
-    * [ ] virtualbox-extension-pack
-    * [ ] Fonts
-      * [ ] font-noto-emoji ????
-      * [ ] font-iosevka
-      * [ ] font-hack-nerd-font
-      * [ ] font-iosevka-nerd-font-mono
-      * [ ] font-iosevka-nerd-font
-* [ ] Install amphetamine
 * [ ] Install using pip
   * [ ] virtualenv
   * [ ] virtualenvwrapper
