@@ -48,6 +48,7 @@ brew cask install disk-inventory-x  # disk space usage manager
 brew cask install firefox
 brew cask install google-chrome
 brew cask install itsycal
+brew cask install keepingyouawake  # GUI for `caffeinate` utility
 brew cask install keka  # archives
 brew cask install licecap  # screen recording (GIF)
 brew cask install pencil  # mockups
