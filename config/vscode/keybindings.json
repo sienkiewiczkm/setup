@@ -2,5 +2,9 @@
   {
     "key": "ctrl+alt+cmd+k",
     "command": "bookmarks.toggleLabeled"
+  },
+  {
+    "key": "alt+z",
+    "command": "-editor.action.toggleWordWrap"
   }
 ]
