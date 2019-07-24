@@ -1,5 +1,7 @@
 {
 
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.symbolPath": "off",
     "editor.codeLens": false,
     "editor.fontFamily": "Iosevka Nerd Font, Iosevka, Menlo, monospace",
     "editor.fontSize": 13,
