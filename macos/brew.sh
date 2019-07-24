@@ -42,6 +42,7 @@ brew cask install xquartz  # X Window System (useful for X11 forwarding)
 
 brew install fzf  # fuzzy finder
 brew install exa  # ls replacement
+brew install imagemagick  # image utilities (magick, convert, identify, mogrify and more)
 brew install insect  # scientific calculator
 brew install the_silver_searcher  # ag, code searching tool similar to ack, with a focus on speed
 
