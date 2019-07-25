@@ -32,6 +32,11 @@ defaults write com.apple.screencapture location ~/Screenshots/
     * [ ] Set timeout for password requirement to *immediately*.
     * [ ] Ensure FileVault is enabled.
 
+* [ ] Enable key repeating
+  * [ ] `defaults write -g ApplePressAndHoldEnabled -bool false`
+  * [ ] `defaults write -g InitialKeyRepeat -int 10` - normal minimum is 15 (225 ms)`
+  * [ ] `defaults write -g KeyRepeat -int 1` - normal minimum is 2 (30 ms)
+
 * [ ] Generate new SSH keys and add them to the agent ([GitHub guide](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent))
 * [ ] Install [Homebrew](http://brew.sh)
   * [ ] (?) Problems with permissions may occur, use: `sudo chown -R $(whoami) $(brew --prefix)/*`
