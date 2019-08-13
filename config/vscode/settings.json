@@ -16,7 +16,6 @@
     "files.exclude": {
         "**/*.pyc": true
     },
-    "search.usePCRE2": true,
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Dracula",
     "workbench.iconTheme": "vscode-icons",
