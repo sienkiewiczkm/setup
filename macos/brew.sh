@@ -16,6 +16,7 @@ brew cask install font-iosevka-nerd-font-mono
 # ----------------
 
 brew install mas  # MacOS store CLI interface
+brew install brew-gem  # install Ruby Gems through brew
 
 # Programming
 # -----------
@@ -36,6 +37,8 @@ brew cask install virtualbox
 brew cask install virtualbox-extension-pack
 brew cask install visual-studio-code
 brew cask install xquartz  # X Window System (useful for X11 forwarding)
+
+brew gem install tmuxinator  # easy automated tmux setup
 
 # Utilities
 # ---------
