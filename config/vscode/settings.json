@@ -22,6 +22,7 @@
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Dracula",
     "workbench.iconTheme": "vscode-icons",
+    "workbench.list.horizontalScrolling": true,
     "workbench.tree.indent": 12,
 
     "vim.camelCaseMotion.enable": true,
