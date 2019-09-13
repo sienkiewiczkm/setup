@@ -43,6 +43,9 @@ export LANG=en_US.UTF-8
 alias ..='cd ../'
 alias e='exa'
 
+# git rev-parse --abbrev-ref HEAD => should be master
+alias git-clean-branches="git fetch -p | git branch -vv | grep ': gone]' | awk '{print $1}' | vipe | xargs -n1 git branch -D"
+
 
 # Source work configuration files (may contain client secrets)
 # (N) removes `zsh: no matches found` warning
