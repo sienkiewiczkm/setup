@@ -1,13 +1,17 @@
 #!/usr/bin/env bash
 
+# Homebrew setup
+# --------------
+
 # TODO: Install Homebrew if not installed.
 
-# Taps
 brew tap homebrew/cask-fonts
 
 # Fonts
 # -----
 
+brew cask install font-open-sans
+brew cask install font-open-sans-condensed
 brew cask install font-iosevka
 brew cask install font-iosevka-nerd-font
 brew cask install font-iosevka-nerd-font-mono
@@ -17,6 +21,12 @@ brew cask install font-iosevka-nerd-font-mono
 
 brew install mas  # MacOS store CLI interface
 brew install brew-gem  # install Ruby Gems through brew
+
+# Web browsers
+# ------------
+
+brew cask install firefox
+brew cask install google-chrome
 
 # Programming
 # -----------
@@ -52,13 +62,12 @@ brew install the_silver_searcher  # ag, code searching tool similar to ack, with
 brew cask install clipy  # clipboard manager
 brew cask install coconutbattery  # battery status viewer
 brew cask install disk-inventory-x  # disk space usage manager
-brew cask install firefox
-brew cask install google-chrome
-brew cask install itsycal
+brew cask install itsycal  # calendar widget for the menu bar
 brew cask install keepingyouawake  # GUI for `caffeinate` utility
 brew cask install keka  # archives
 brew cask install licecap  # screen recording (GIF)
 brew cask install pencil  # mockups
+brew cask install skitch  # screenshots annotation
 brew cask install tunnelblick  # VPN client
 
 # Entertainment & Misc
@@ -70,15 +79,13 @@ brew cask install anki  # flashcards
 brew cask install steam
 brew cask install vienna  # RSS client - consider removal in favor of newsboat
 brew cask install vlc
+brew cask install vox  # FLAC player
 
 
 # Under consideration / to-do list
 # --------------------------------
 
-# brew install python
-# brew install python@2
-# brew install pyenv
-
-# brew cask install skitch  # screenshots annotation
-
+# python
+# python@2
+# pyenv
 # node
