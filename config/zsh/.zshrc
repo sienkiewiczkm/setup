@@ -25,6 +25,9 @@ SPACESHIP_EXEC_TIME_ELAPSED=5
 SPACESHIP_TIME_SHOW=true
 SPACESHIP_EXIT_CODE_SHOW=true
 
+# initialize completions
+autoload -U compinit && compinit
+
 # Default tools
 export EDITOR=nvim
 export VISUAL=nvim
