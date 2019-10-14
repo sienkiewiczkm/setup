@@ -35,9 +35,12 @@ brew install curl
 brew install git  # Xcode command line tools may have old version
 brew install moreutils  # combine, sponge, ts, vipe and more
 brew install nvim  # neovim
+brew install python
+brew install python@2
 brew install reattach-to-user-namespace  # required by tmux config
 brew install tmux
 brew install wget
+brew install sqlite  # sqlite3, command-line interface fo SQLite
 brew install zsh
 
 brew cask install db-browser-for-sqlite
@@ -53,11 +56,12 @@ brew gem install tmuxinator  # easy automated tmux setup
 # Utilities
 # ---------
 
-brew install fzf  # fuzzy finder
 brew install exa  # ls replacement
+brew install fzf  # fuzzy finder
 brew install imagemagick  # image utilities (magick, convert, identify, mogrify and more)
 brew install insect  # scientific calculator
 brew install the_silver_searcher  # ag, code searching tool similar to ack, with a focus on speed
+brew install watson  # project time tracking
 
 brew cask install clipy  # clipboard manager
 brew cask install coconutbattery  # battery status viewer
@@ -82,10 +86,14 @@ brew cask install vlc
 brew cask install vox  # FLAC player
 
 
+# App Store
+# ---------
+
+mas install 1295203466    # Microsoft Remote Desktop 10
+mas install 441258766     # Magnet
+
+
 # Under consideration / to-do list
 # --------------------------------
-
-# python
-# python@2
 # pyenv
 # node
