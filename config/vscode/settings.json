@@ -36,10 +36,22 @@
     "vim.easymotionMarkerForegroundColorOneChar": "#f0f",
     "vim.easymotionMarkerForegroundColorTwoChar": "#f0f",
     "vim.easymotionMarkerHeight": 18,
+    "vim.textwidth": 100,
     "vim.useSystemClipboard": true,
 
-    "todo-tree.tags": ["TODO", "FIXME", "HACK"],
-    "todo-tree.customHighlight": {
+    "todo-tree.general.tags": [
+        "CRUMB",
+        "TODO",
+        "FIXME",
+        "HACK"
+    ],
+    "todo-tree.highlights.customHighlight": {
+        "CRUMB": {
+            "icon": "bookmark",
+            "foreground": "#ffffff",
+            "background": "#0000cc",
+            "type": "text-and-comment"
+        },
         "FIXME": {
             "icon": "tools",
             "foreground": "yellow",
