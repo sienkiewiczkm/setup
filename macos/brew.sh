@@ -67,6 +67,7 @@ brew cask install clipy  # clipboard manager
 brew cask install coconutbattery  # battery status viewer
 brew cask install disk-inventory-x  # disk space usage manager
 brew cask install itsycal  # calendar widget for the menu bar
+brew cask install keepassxc  # KeePassXC password manager
 brew cask install keepingyouawake  # GUI for `caffeinate` utility
 brew cask install keka  # archives
 brew cask install licecap  # screen recording (GIF)
