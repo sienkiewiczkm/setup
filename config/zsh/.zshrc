@@ -45,6 +45,10 @@ export LANG=en_US.UTF-8
 alias ..='cd ../'
 alias e='exa'
 
+# fuzzy branch checkout
+alias gc='git branch | fzf | head -n1 | xargs git checkout'
+alias gca='git branch -a | fzf | head -n1 | xargs git checkout'
+
 # git rev-parse --abbrev-ref HEAD => should be master
 alias git-clean-branches="git fetch -p | git branch -vv | grep ': gone]' | awk '{print $1}' | vipe | xargs -n1 git branch -D"
 
