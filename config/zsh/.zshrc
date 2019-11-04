@@ -4,7 +4,6 @@ if ! zgen saved; then
   zgen oh-my-zsh
 
   zgen oh-my-zsh plugins/command-not-found  # provide suggested packages to be installed if a command cannot be found
-  zgen oh-my-zsh plugins/git  # provides many aliases and a few useful functions
   zgen oh-my-zsh plugins/sudo  # prefix your current or previous commands with sudo by pressing esc twice
 
   zgen load denysdovhan/spaceship-prompt spaceship
