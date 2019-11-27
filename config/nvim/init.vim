@@ -12,9 +12,6 @@ Plug 'tpope/vim-repeat' " allows to use . with many plugins too
 Plug 'tpope/vim-surround' " change/add/delete surrounding quotes, parens etc.
 Plug 'reedes/vim-pencil'
 
-" Visuals
-Plug 'nanotech/jellybeans.vim' " color scheme
-
 " Note taking
 Plug 'vimwiki/vimwiki'
 
@@ -67,7 +64,6 @@ set splitbelow splitright
 
 " basic visual settings
 set background=dark
-colorscheme jellybeans
 
 " show relative line numbers
 set number
