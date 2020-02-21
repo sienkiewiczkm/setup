@@ -1,0 +1,81 @@
+tap:
+  - homebrew/cask-fonts
+
+install:
+  fonts:
+    cask:
+      - font-open-sans
+      - font-open-sans-condensed
+      - font-iosevka
+      - font-iosevka-nerd-font
+      - font-iosevka-nerd-font-mono
+
+  software-managers:
+    standard:
+      - mas  # MacOS store CLI interface
+      - brew-gem  # install Ruby Gems through brew
+
+  web-browsers:
+    cask:
+      - firefox
+      - google-chrome
+
+  programming:
+    standard:
+      - curl
+      - git  # Xcode command line tools may have old version
+      - httpie
+      - moreutils  # combine, sponge, ts, vipe and more
+      - nvim  # neovim
+      - opencv
+      - python
+      - python@2
+      - reattach-to-user-namespace  # required by tmux config
+      - sqlite  # sqlite3, command-line interface fo SQLite
+      - tmux
+      - watch
+      - wget
+      - zsh
+    cask:
+      - db-browser-for-sqlite
+      - iterm2
+      - paintbrush
+      - virtualbox
+      - virtualbox-extension-pack
+      - visual-studio-code
+      - xquartz  # X Window System (useful for X11 forwarding)
+    gem:
+      - tmuxinator  # easy automated tmux setup
+
+  utilities:
+    standard:
+      - exa  # ls replacement
+      - fzf  # fuzzy finder
+      - imagemagick  # image utilities (magick, convert, identify, mogrify and more)
+      - insect  # scientific calculator
+      - the_silver_searcher  # ag, code searching tool similar to ack, with a focus on speed
+      - watson  # project time tracking
+    cask:
+      - clipy  # clipboard manager
+      - coconutbattery  # battery status viewer
+      - disk-inventory-x  # disk space usage manager
+      - itsycal  # calendar widget for the menu bar
+      - keepassxc  # KeePassXC password manager
+      - keepingyouawake  # GUI for `caffeinate` utility
+      - keka  # archives
+      - licecap  # screen recording (GIF)
+      - notion  # online note taking
+      - pencil  # mockups
+      - skitch  # screenshots annotation
+      - tunnelblick  # VPN client
+
+  utilities:
+    standard:
+      - newsboat # RSS client
+
+    cask:
+      - anki  # flashcards
+      - steam
+      - vienna  # RSS client - consider removal in favor of newsboat
+      - vlc
+      - vox  # FLAC player

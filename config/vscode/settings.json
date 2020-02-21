@@ -2,27 +2,40 @@
 
     "breadcrumbs.enabled": true,
     "breadcrumbs.symbolPath": "off",
+
+    "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.codeLens": false,
     "editor.cursorSurroundingLines": 5,
     "editor.fontFamily": "Iosevka Nerd Font, Iosevka, Menlo, monospace",
     "editor.fontLigatures": true,
-    "editor.fontSize": 13,
     "editor.lineNumbers": "relative",
     "editor.renderWhitespace": "boundary",
     "editor.rulers": [80, 120],
     "editor.scrollBeyondLastLine": false,
     "editor.smoothScrolling": true,
+    "editor.snippetSuggestions": "bottom",
+    "editor.suggest.maxVisibleSuggestions": 15,
+    "editor.suggestSelection": "first",
     "editor.tabSize": 2,
+
     "explorer.openEditors.visible": 0,
     "explorer.sortOrder": "filesFirst",
+
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 2000,
     "files.exclude": {
         "**/*.pyc": true
     },
+
+    "html.mirrorCursorOnMatchingTag": false,
+
     "search.collapseResults": "alwaysCollapse",
-    "window.zoomLevel": 0,
+
+    "window.zoomLevel": 1,
+
     "workbench.colorTheme": "Dracula",
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 8,
     "workbench.iconTheme": "vscode-icons",
     "workbench.list.horizontalScrolling": true,
     "workbench.tree.indent": 12,
@@ -66,18 +79,26 @@
         }
     },
 
+    "cSpell.language": "en-GB",
     "cSpell.userWords": [
+        "adminable",
+        "builtin",
+        "checkbox",
+        "dialog",
         "easymotion",
         "gitlens",
         "iosevka",
         "kamil",
         "menlo",
         "monospace",
+        "placeholder",
         "popd",
         "pushd",
+        "sienkiewicz",
         "symlinks",
         "tmux",
         "tunnelblick",
+        "unmount",
         "virtualenv"
     ]
 
