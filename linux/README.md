@@ -1,5 +1,15 @@
 # Ubuntu configuration
 
+- [Ubuntu configuration](#ubuntu-configuration)
+  - [Before you install Ubuntu on a new machine](#before-you-install-ubuntu-on-a-new-machine)
+  - [Minimal `ssh` setup](#minimal-ssh-setup)
+  - [Install software & configurations](#install-software--configurations)
+    - [Package list](#package-list)
+    - [`zsh`](#zsh)
+    - [`git`](#git)
+    - [Visual Studio Code](#visual-studio-code)
+  - [Notes](#notes)
+
 Clone this repo to `~/setup`. This guide will assume this location.
 
 ## Before you install Ubuntu on a new machine
