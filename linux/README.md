@@ -2,19 +2,38 @@
 
 - [Ubuntu configuration](#ubuntu-configuration)
   - [Before you install Ubuntu on a new machine](#before-you-install-ubuntu-on-a-new-machine)
+  - [Installation](#installation)
+  - [System configuration](#system-configuration)
   - [Minimal `ssh` setup](#minimal-ssh-setup)
   - [Install software & configurations](#install-software--configurations)
     - [Package list](#package-list)
     - [`zsh`](#zsh)
     - [`git`](#git)
     - [Visual Studio Code](#visual-studio-code)
-  - [Notes](#notes)
 
 Clone this repo to `~/setup`. This guide will assume this location.
 
 ## Before you install Ubuntu on a new machine
 
 * Prior to installation ensure you have an Ethernet cable. WiFi may not work initially without updates/proper drivers.
+
+## Installation
+
+Install Ubuntu with recommended settings, encrypt home if possible. If you'll skip encryption you can do it later, just follow [this guide on www.howtogeek.com](https://www.howtogeek.com/116032/how-to-encrypt-your-home-folder-after-installing-ubuntu/).
+
+## System configuration
+
+1. Remap <kbd>Caps Lock</kbd> to <kbd>Ctrl</kbd> using "Tweaks" tool (from `gnome-tweak-tool` package)
+2. Install better fonts like [nerd fonts](https://github.com/ryanoasis/nerd-fonts/)
+    1. Download them and place in `~/.fonts`
+    2. Run `fc-cache -fv` to rebuild the font cache
+3. Create SSH key for `git`, `ssh` etc.
+
+    ```sh
+      ssh-keygen -t rsa -b 4096 -C "user@example.com"  # generate keys
+      eval "$(ssh-agent -s)"  # start ssh-agent in the background
+      ssh-add ~/.ssh/id_rsa  # add key
+    ```
 
 ## Minimal `ssh` setup
 
@@ -93,22 +112,3 @@ ln -s $(pwd)/vscode/snippets ~/.config/Code/User/snippets
 # Install extensions
 cat vscode/extensions.txt | xargs -n1 code --install-extension
 ```
-
-## Notes
-
-Install Ubuntu with recommended settings, encrypt home if possible.
-
-Setup encryption of home folder if skipped:
-[Guide](https://www.howtogeek.com/116032/how-to-encrypt-your-home-folder-after-installing-ubuntu/)
-
-Create SSH key for git, ssh etc.
-
-```sh
-  ssh-keygen -t rsa -b 4096 -C "youremail@example.com"  # generate keys
-  eval "$(ssh-agent -s)"  # start ssh-agent in the background
-  ssh-add ~/.ssh/id_rsa  # add key
-```
-
-Remap caps lock to ctrl using "Tweaks" tool (package gnome-tweak-tool)
-
-Install some better fonts [nerd fonts](https://github.com/ryanoasis/nerd-fonts/), download, place in `~/.fonts` and run `fc-cache -fv` to rebuild the font cache.
