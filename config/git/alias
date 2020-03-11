@@ -1,10 +1,15 @@
 [alias]
   co = checkout
   cob = checkout -b
+  sw = switch
+  master = !git sw master && git ff
+  nw = !git master && git cob
 
   st = status
   ds = diff --staged
   undo-commit = reset --soft HEAD~1
+
+  ff = pull --ff-only
 
   lg = log --graph --format='%C(bold white)%h%Creset %C(bold red)%s%Creset %C(dim white)%ar by %ae%Creset%Cblue%d%Creset'
   lgd = log --graph --format='%C(bold white)%h%Creset %C(dim white)%ar by %ae%Creset%Cblue%d%Creset%n%C(bold red)%s%n%b'
