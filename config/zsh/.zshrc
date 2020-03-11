@@ -46,8 +46,8 @@ alias ..='cd ../'
 alias e='exa'
 
 # fuzzy branch checkout
-alias gc='git branch | fzf | head -n1 | xargs git checkout'
-alias gca='git branch -a | fzf | head -n1 | xargs git checkout'
+alias gs='git branch | fzf | head -n1 | xargs git switch'
+alias gsl='git branch -a | fzf | head -n1 | sed "s/remotes\/origin\///g" | xargs git switch'
 
 # git rev-parse --abbrev-ref HEAD => should be master
 alias git-clean-branches="git fetch -p | git branch -vv | grep ': gone]' | awk '{print $1}' | vipe | xargs -n1 git branch -D"
@@ -58,3 +58,7 @@ alias git-clean-branches="git fetch -p | git branch -vv | grep ': gone]' | awk '
 for cfgFile in ~/.zshrc.work.*(N) ; do
   source "$cfgFile"
 done
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+fpath=(~/.completions $fpath)
