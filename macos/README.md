@@ -21,8 +21,33 @@ defaults write com.apple.screencapture location ~/Screenshots/
 ## Manual tasks
 
 * [ ] Install Xcode command line tools: `xcode-select --install`
+
+* [ ] Set up SSH keys ([GitHub guide](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent))
+
+* [ ] Install [Homebrew](http://brew.sh)
+  * [ ] Run `setup/macos/brew.sh`. Note: may ask for password multiple times.
+
+* [ ] Install tools from pip
+  * [ ] virtualenv
+
+* [ ] Set up `zsh`
+  * [ ] After running brew, ZSH should be installed. 
+  * [ ] Set default shell
+    * [ ] Add `/usr/local/bin/zsh` to `/etc/shells` (check `which zsh`)
+    * [ ] `chsh -s /usr/local/bin/zsh`
+  * [ ] Install zgen: `git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"`
+  * [ ] Symlink zgen: `ln -sv ${pwd}/config/zsh/zgen ~/.zgen`
+  * [ ] Symlink .zshrc
+
+* [ ] Set up `git`
+  * [ ] Set `user.name`, eg: `git config --global user.name "Kamil Sienkiewicz"`
+  * [ ] Set `user.email`, eg: `git config --global user.email "sienkiewiczkm@gmail.com"`
+
+* [ ] Set up other tools
+  * [ ] Set **iTerm** color scheme to [Dracula](https://draculatheme.com/iterm/)
+
 * [ ] Setup MacOS preferences
-  * Keyboard
+  * [ ] Keyboard
     * [ ] Set modifier keys for **all** keyboards: map Caps Lock to Control (in *Modifier keys*)
     * [ ] Disable *Add full stop with double space* in *Text settings*
   * [ ] Mission Control
@@ -31,26 +56,14 @@ defaults write com.apple.screencapture location ~/Screenshots/
   * [ ] Security and Privacy
     * [ ] Set timeout for password requirement to *immediately*.
     * [ ] Ensure FileVault is enabled.
+  * [ ] Finder
+    * [ ] View > Show Path Bar
+    * [ ] View > Show Status Bar
+  * [ ] Menu bar
+    * [ ] Battery > Show percentage
+  * [ ] Enable key repeating
+    * [ ] `defaults write -g ApplePressAndHoldEnabled -bool false`
+    * [ ] `defaults write -g InitialKeyRepeat -int 10` - normal minimum is 15 (225 ms)`
+    * [ ] `defaults write -g KeyRepeat -int 1` - normal minimum is 2 (30 ms)
 
-* [ ] Enable key repeating
-  * [ ] `defaults write -g ApplePressAndHoldEnabled -bool false`
-  * [ ] `defaults write -g InitialKeyRepeat -int 10` - normal minimum is 15 (225 ms)`
-  * [ ] `defaults write -g KeyRepeat -int 1` - normal minimum is 2 (30 ms)
-
-* [ ] Generate new SSH keys and add them to the agent ([GitHub guide](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent))
-* [ ] Install [Homebrew](http://brew.sh)
-  * [ ] (?) Problems with permissions may occur, use: `sudo chown -R $(whoami) $(brew --prefix)/*`
-* [ ] Install using pip
-  * [ ] virtualenv
-  * [ ] virtualenvwrapper
-* [ ] Set git `user.name` and `user.email`, eg: `git config --global user.name "Kamil Sienkiewicz"`
-* [ ] Set up ZSH
-  * [ ] Install zgen: `git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"`
-  * [ ] Load zgen in `.zshrc`: `source "${HOME}/.zgen/zgen.zsh"`
-  * [ ] Set default shell
-    * [ ] Add `/usr/local/bin/zsh` to `/etc/shells`
-    * [ ] `chsh -s /usr/local/bin/zsh`
-* [ ] Set **iTerm** color scheme to [Dracula](https://draculatheme.com/iterm/)
-* [ ] Configurations
-  * [ ] Run `bash osx/vscode.sh`
 * [ ] Reboot
