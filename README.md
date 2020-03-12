@@ -115,6 +115,14 @@ Setup pager, for `zsh` the following is fine:
 git config --global core.pager "less -F -X"
 ```
 
+#### `tmux`
+
+Install `tmux` and symlink the configurations:
+
+```Bash
+ln -s /home/$(whoami)/setup/config/tmux/tmux.conf ~/.tmux.conf
+```
+
 #### Visual Studio Code
 
 ```Bash
