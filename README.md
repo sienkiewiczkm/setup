@@ -45,6 +45,12 @@ Install Ubuntu with recommended settings, encrypt home if possible. If you'll sk
       ssh-add ~/.ssh/id_rsa  # add key
     ```
 
+4. Unbind <kbd>SUPER</kbd> + <kbd>P</kbd> since it may cause problems when you are used to MacOS. [Follow the steps from Stack](https://unix.stackexchange.com/q/208682):
+    1. Install `dconf-editor`.
+    2. Go to `/org/gnome/mutter/keybindings/switch-monitor`
+    3. Disable "Use default value".
+    4. Delete: `'<Super>p',` from the input below.
+
 ### Minimal `ssh` setup
 
 1. [`zsh`](#zsh)
