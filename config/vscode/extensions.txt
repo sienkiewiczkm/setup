@@ -1,4 +1,5 @@
 alefragnani.Bookmarks
+canadaduane.notes
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
 DavidAnson.vscode-markdownlint
@@ -6,12 +7,20 @@ dbaeumer.vscode-eslint
 dracula-theme.theme-dracula
 eamodio.gitlens
 eg2.vscode-npm-script
+glen-84.sass-lint
 goessner.mdmath
 Gruntfuggly.todo-tree
+jakearl.search-editor-apply-changes
 ms-python.python
+ms-vscode-remote.remote-containers
+ms-vscode-remote.remote-ssh
+ms-vscode-remote.remote-ssh-edit
+ms-vscode-remote.remote-wsl
+ms-vscode-remote.vscode-remote-extensionpack
 redhat.vscode-yaml
 richie5um2.vscode-sort-json
 streetsidesoftware.code-spell-checker
-Tyriar.sort-lines
+tkrkt.linenote
 vscode-icons-team.vscode-icons
 vscodevim.vim
+yzhang.markdown-all-in-one
