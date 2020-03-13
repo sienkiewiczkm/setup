@@ -87,9 +87,19 @@ ln -s /home/$(whoami)/setup/config/zsh/.zshrc ~/.zshrc
 
 #### `git`
 
-```Bash
-sudo apt install git
+Install latest `git` using [official instructions](https://git-scm.com/download/).
 
+On Ubuntu you probably want to add apt repository:
+
+```Bash
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt update
+sudo apt install git
+```
+
+Set up your identity:
+
+```Bash
 git config --global user.name "first and last name"
 git config --global user.email "email address"
 ```
