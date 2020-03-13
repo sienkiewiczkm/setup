@@ -76,6 +76,17 @@ Install Ubuntu with recommended settings, encrypt home if possible. If you'll sk
 | xclip              | clipboard support                       |                                             |
 | zsh                | shell                                   |                                             |
 
+#### `kitty`
+
+Install `kitty`:
+
+```Bash
+sudo apt install kitty
+
+# link the configurations
+ln -s /home/kamil/code/setup/config/kitty ~/.config/kitty
+```
+
 #### `zsh`
 
 ```Bash
