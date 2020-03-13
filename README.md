@@ -146,3 +146,9 @@ ln -s $(pwd)/vscode/snippets ~/.config/Code/User/snippets
 # Install extensions
 cat vscode/extensions.txt | xargs -n1 code --install-extension
 ```
+
+### FAQ
+
+#### Bluetooth devices do not work correctly on dual boot (Windows + Linux)
+
+Bluetooth pairing generates unique key during pairing and re-pairing on another system overrides this key, after reboot keys do not match. See the guide for fix: https://unix.stackexchange.com/q/255509
