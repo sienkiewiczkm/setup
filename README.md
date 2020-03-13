@@ -3,31 +3,32 @@
 - [setup](#setup)
   - [Basics](#basics)
   - [Ubuntu configuration](#ubuntu-configuration)
-    - [Before you install Ubuntu on a new machine](#before-you-install-ubuntu-on-a-new-machine)
     - [Installation](#installation)
     - [System configuration](#system-configuration)
     - [Minimal `ssh` setup](#minimal-ssh-setup)
     - [Install software & configurations](#install-software--configurations)
       - [Package list](#package-list)
+      - [`kitty`](#kitty)
       - [`zsh`](#zsh)
       - [`git`](#git)
+      - [`tmux`](#tmux)
       - [Visual Studio Code](#visual-studio-code)
+    - [FAQ](#faq)
+      - [Bluetooth devices do not work correctly on dual boot (Windows + Linux)](#bluetooth-devices-do-not-work-correctly-on-dual-boot-windows--linux)
 
 ## Basics
 
-1. Clone this repo.
+1. Clone this repo to `~/setup`. This guide will assume this location in most cases.
 2. Initialize submodules `git submodule update --init --recursive`.
 3. Follow instructions depending on the platform.
 
 ## Ubuntu configuration
 
-Clone this repo to `~/setup`. This guide will assume this location.
-
-### Before you install Ubuntu on a new machine
-
-* Prior to installation ensure you have an Ethernet cable. WiFi may not work initially without updates/proper drivers.
-
 ### Installation
+
+**Before** you install Ubuntu on a new machine:
+
+- Ensure you have an Ethernet cable. WiFi may not work initially without updates/proper drivers.
 
 Install Ubuntu with recommended settings, encrypt home if possible. If you'll skip encryption you can do it later, just follow [this guide on www.howtogeek.com](https://www.howtogeek.com/116032/how-to-encrypt-your-home-folder-after-installing-ubuntu/).
 
