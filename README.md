@@ -72,6 +72,7 @@ ubuntu_apt_list=(
   net-tools # ifconfig (deprecated, use ip tool, for IP: ip -c a)
   python3-pip
   python3-venv
+  silversearcher-ag # faster alternative for grep
 )
 sudo apt install ${ubuntu_apt_list[*]}
 ```
