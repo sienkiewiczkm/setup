@@ -178,6 +178,14 @@ cat vscode/extensions.txt | xargs -n1 code --install-extension
 
 ### FAQ
 
+#### Ubuntu changes Windows clock and vice versa
+
+Ubuntu stores clock time in UTC, Windows doesn't. You have to fix one of them, to force Ubuntu to use local time use:
+
+```Bash
+timedatectl set-local-rtc 1 --adjust-system-clock
+```
+
 #### Bluetooth devices do not work correctly on dual boot (Windows + Linux)
 
 Bluetooth pairing generates unique key during pairing and re-pairing on another system overrides this key, after reboot keys do not match. See the guide for fix: https://unix.stackexchange.com/q/255509
