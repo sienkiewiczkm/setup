@@ -52,6 +52,8 @@ alias gsl='git branch -a | fzf | head -n1 | sed "s/remotes\/origin\///g" | xargs
 # git rev-parse --abbrev-ref HEAD => should be master
 alias git-clean-branches="git fetch -p | git branch -vv | grep ': gone]' | awk '{print $1}' | vipe | xargs -n1 git branch -D"
 
+# specific for kitty terminal
+alias icat="kitty +kitten icat"
 
 # Source work configuration files (may contain client secrets)
 # (N) removes `zsh: no matches found` warning
