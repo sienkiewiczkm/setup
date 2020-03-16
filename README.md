@@ -60,6 +60,22 @@ Install Ubuntu with recommended settings, encrypt home if possible. If you'll sk
 
 ### Install software & configurations
 
+```Bash
+ubuntu_apt_list=(
+  clementine # audio player
+  exa # fancy ls replacement
+  fzf # fuzzy search
+  git
+  htop # fancy top
+  imagemagick # image manipulation toolset
+  kitty # terminal emulator
+  net-tools # ifconfig (deprecated, use ip tool, for IP: ip -c a)
+  python3-pip
+  python3-venv
+)
+sudo apt install ${ubuntu_apt_list[*]}
+```
+
 #### Package list
 
 | Package            | Description                             | URL                                         |
