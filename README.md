@@ -77,6 +77,17 @@ ubuntu_apt_list=(
 sudo apt install ${ubuntu_apt_list[*]}
 ```
 
+#### Install exfat drivers
+
+[How to mount an exfat drive on Ubuntu via fosslinux.com](https://www.fosslinux.com/17725/how-to-mount-an-exfat-drive-on-ubuntu.htm):
+
+```Bash
+sudo add-apt-repository universe
+sudo apt update
+sudo apt install exfat-fuse exfat-utils
+```
+
+
 #### Package list
 
 | Package            | Description                             | URL                                         |
