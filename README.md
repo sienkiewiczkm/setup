@@ -113,6 +113,24 @@ sudo apt install exfat-fuse exfat-utils
 | xclip              | clipboard support                       |                                             |
 | zsh                | shell                                   |                                             |
 
+### `nvim`
+
+Create symlink:
+
+```Bash
+ln -s /home/kamil/code/setup/config/nvim ~/.config/nvim 
+```
+
+Install `vim-plug` for plugins:
+
+```Bash
+# Install vim-plug
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+Run `nvim`, run `:PlugInstall`. Close `nvim`. Ready for use.
+
 #### `kitty`
 
 Install `kitty`:
