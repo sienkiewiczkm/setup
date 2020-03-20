@@ -32,6 +32,14 @@
 
 Install Ubuntu with recommended settings, encrypt home if possible. If you'll skip encryption you can do it later, just follow [this guide on www.howtogeek.com](https://www.howtogeek.com/116032/how-to-encrypt-your-home-folder-after-installing-ubuntu/).
 
+Once installed, update packages:
+
+```Bash
+sudo apt update         # update package index
+sudo apt upgrade        # download & install packages
+sudo do-release-upgrade # upgrade to newest release
+```
+
 ### System configuration
 
 1. Remap <kbd>Caps Lock</kbd> to <kbd>Ctrl</kbd> using "Tweaks" tool (from `gnome-tweak-tool` package)
