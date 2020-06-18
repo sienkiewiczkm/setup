@@ -7,6 +7,7 @@
 
   st = status
   ds = diff --staged
+  fu = commit --fixup
   undo-commit = reset --soft HEAD~1
 
   ff = pull --ff-only
