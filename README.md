@@ -60,6 +60,10 @@ sudo do-release-upgrade # upgrade to newest release
     3. Disable "Use default value".
     4. Delete: `'<Super>p',` from the input below.
 
+5. On dekstops, Settings > Power > Blank screen option: set to Never. Alternatively run in the terminal: `
+
+6. Set org.gnome.desktop.interface.clock-show-weekday to true
+
 ### Minimal `ssh` setup
 
 1. [`zsh`](#zsh)
@@ -68,21 +72,52 @@ sudo do-release-upgrade # upgrade to newest release
 
 ### Install software & configurations
 
+#### Install `apt` dependencies.
+
 ```Bash
 ubuntu_apt_list=(
   clementine # audio player
-  exa # fancy ls replacement
+  cmake
+  dconf-monitor # configuration tool, see 'System configuration'
   fzf # fuzzy search
+  gimp
   git
+  gitk # graphical history viewer for git
+  gnome-tweak-package # tweaks for Gnome, see 'System configuration'
+  gpick # color picker
   htop # fancy top
   imagemagick # image manipulation toolset
   kitty # terminal emulator
+  moreutils # chronic, vipe, parallel and more (https://joeyh.name/code/moreutils/)
   net-tools # ifconfig (deprecated, use ip tool, for IP: ip -c a)
   python3-pip
   python3-venv
   silversearcher-ag # faster alternative for grep
 )
+
 sudo apt install ${ubuntu_apt_list[*]}
+```
+
+#### Install `snap` dependencies.
+
+```Bash
+snap_install_list=(
+  discord
+  spotify
+)
+
+sudo snap install ${snap_install_list[*]}
+
+# classic snaps:
+#   code # Visual Studio Code
+```
+
+#### Install Rust
+
+Follow the instructions on [https://rustup.rs/](https://rustup.rs/)
+
+```Bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
 #### Install exfat drivers
@@ -111,6 +146,7 @@ sudo apt install exfat-fuse exfat-utils
 | virtualenv         |                                         |                                             |
 | visual studio code |                                         |                                             |
 | xclip              | clipboard support                       |                                             |
+| imagemagick        | image toolset, used by kitty            |                                             |
 | zsh                | shell                                   |                                             |
 
 ### `nvim`
