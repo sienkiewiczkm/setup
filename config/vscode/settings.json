@@ -4,6 +4,7 @@
     "breadcrumbs.symbolPath": "off",
 
     "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.autoClosingBrackets": "never",
     "editor.codeLens": false,
     "editor.cursorSurroundingLines": 5,
     "editor.fontFamily": "Iosevka Nerd Font, Iosevka, Menlo, monospace",
@@ -36,6 +37,7 @@
     "workbench.colorTheme": "Dracula",
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.value": 8,
+    "workbench.editor.scrollToSwitchTabs": true,
     "workbench.iconTheme": "vscode-icons",
     "workbench.list.horizontalScrolling": true,
     "workbench.tree.indent": 12,
@@ -78,6 +80,7 @@
             "type": "text-and-comment"
         }
     },
+    "todo-tree.tree.showScanModeButton": false,
 
     "cSpell.language": "en-GB",
     "cSpell.userWords": [
@@ -86,14 +89,19 @@
         "checkbox",
         "dialog",
         "easymotion",
+        "fallback",
         "gitlens",
+        "hacky",
         "iosevka",
         "kamil",
         "menlo",
         "monospace",
         "placeholder",
         "popd",
+        "popover",
         "pushd",
+        "refetch",
+        "saml",
         "sienkiewicz",
         "symlinks",
         "tmux",
