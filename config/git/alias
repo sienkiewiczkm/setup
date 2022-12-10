@@ -1,0 +1,21 @@
+[alias]
+  co = checkout
+  cob = checkout -b
+  sw = switch
+  master = !git sw master && git ff
+  nw = !git master && git cob
+  wip = !git add . && git commit -m \"WIP commit on `date -Iminutes`\"
+
+  st = status
+  ds = diff --staged
+  fu = commit --fixup
+  undo-commit = reset --soft HEAD~1
+
+  ff = pull --ff-only
+
+  lg = log --graph --format='%C(bold white)%h%Creset %C(bold red)%s%Creset %C(dim white)%ar by %ae%Creset%Cblue%d%Creset'
+  lgd = log --graph --format='%C(bold white)%h%Creset %C(dim white)%ar by %ae%Creset%Cblue%d%Creset%n%C(bold red)%s%n%b'
+
+  # https://stackoverflow.com/a/30998048
+  find-merge = "!sh -c 'commit=$0 && branch=${1:-HEAD} && (git rev-list $commit..$branch --ancestry-path | cat -n; git rev-list $commit..$branch --first-parent | cat -n) | sort -k2 -s | uniq -f1 -d | sort -n | tail -1 | cut -f2'"
+  show-merge = "!sh -c 'merge=$(git find-merge $0 $1) && [ -n \"$merge\" ] && git show $merge'"

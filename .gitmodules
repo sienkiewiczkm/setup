@@ -1,0 +1,9 @@
+[submodule "config/iterm/theme-dracula"]
+	path = config/iterm/theme-dracula
+	url = https://github.com/dracula/iterm
+[submodule "config/zsh/zgen"]
+	path = config/zsh/zgen
+	url = https://github.com/tarjoilija/zgen
+[submodule "config/kitty/dracula-kitty"]
+	path = config/kitty/dracula-kitty
+	url = https://github.com/dracula/kitty
