@@ -9,11 +9,19 @@ tap "homebrew/cask-fonts"
 # Fonts
 
 cask "font-atkinson-hyperlegible"
+cask "font-roboto"
+cask "font-roboto-slab"
+cask "font-ubuntu"
+cask "font-ubuntu-condensed"
 
 # Monospace fonts
 cask "font-fantasque-sans-mono-nerd-font"
 cask "font-iosevka-nerd-font"
 cask "font-jetbrains-mono-nerd-font"
+cask "font-roboto-mono"
+cask "font-roboto-mono-nerd-font"
+cask "font-ubuntu-mono"
+cask "font-ubuntu-mono-nerd-font"
 
 # ------------------------------------------------------------------------------
 # CLI tools
@@ -45,7 +53,6 @@ brew "qrencode"             # QR code generator
 brew "rename"               # rename in CLI with regex
 brew "speedtest-cli"        # https://www.speedtest.net/apps/cli
 brew "svgo"                 # optimization tool for SVGs
-brew "temurin"              # OpenJDK (Java Development Kit) binaries, https://adoptium.net/
 brew "the_silver_searcher"  # ag, https://github.com/ggreer/the_silver_searcher
 brew "tldr"                 # concise man pages based on examples
 brew "tmux"                 # terminal multiplexer
@@ -54,13 +61,13 @@ brew "watson"               # time measurements
 brew "wget"
 brew "ykman"                # Yubikey management
 brew "youtube-dl"           # youtube downloader
+brew "z"                    # fuzzy cd to most used places
 brew "zsh"
 
 # ------------------------------------------------------------------------------
 # Apps
 
 cask "anki"
-cask "balenaetcher"         # etching ISOs on USB sticks
 cask "blender"
 cask "calibre"              # ebook management
 cask "coconutbattery"
@@ -82,12 +89,21 @@ cask "keka"
 cask "kitty"
 cask "licecap"              # screen recording (gifs)
 cask "meld"                 # diff tool supporting 3-way merge
+cask "skitch"               # screenshot annotation tool
 cask "steam"
+cask "veracrypt"            # encryption
 cask "visual-studio-code"
 cask "vlc"
 cask "vox"                  # winamp-like audio player
-cask "skitch"               # screenshot annotation tool
+
+# 3D Printing
+cask "freecad"              # Free CAD software
+cask "creality-slicer"      # slicer from creality based on Cura
+cask "openscad"             # 3D CAD using code
+cask "ultimaker-cura"       # good slicer
 
 # ------------------------------------------------------------------------------
 # Archived stuff - sometimes may be useful
+# brew "temurin"              # OpenJDK (Java Development Kit) binaries, https://adoptium.net/
+# cask "balenaetcher"         # etching ISOs on USB sticks
 # cask "db-browser-for-sqlite"
