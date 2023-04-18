@@ -86,6 +86,8 @@ alias git-clean-branches="git fetch -p | git branch -vv | grep ': gone]' | awk '
 # specific for kitty terminal
 alias icat="kitty +kitten icat"
 
+alias ports-tcp="lsof -nP -iTCP -sTCP:LISTEN"
+
 # ------------------------------------------------------------------------------
 # Source work configuration files (may contain client secrets)
 # (N) removes `zsh: no matches found` warning
@@ -105,6 +107,8 @@ if [ -d "$HOME/.nvm" ]; then
   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 fi
 
+. $(brew --prefix)/etc/profile.d/z.sh
+
 if [[ $1 == eval ]]
 then
     "$@"
@@ -112,3 +116,5 @@ set --
 fi
 
 export GPG_TTY=$(tty)
+
+eval "$(rbenv init -)"
