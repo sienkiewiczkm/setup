@@ -2,7 +2,13 @@
 help:
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
-vscode-update-ext: ## update Visual Studio Code extension list
-	code --list-extensions > ./config/vscode/extensions.txt
+vscode-macos-stow: ## installs vscode dotfiles (MacOS only)
+	stow vscode -d packages -t ~/Library/Application\ Support/Code/User/ --verbose
 
-.PHONY: vscode-update-ext
+vscode-extensions-save: ## update Visual Studio Code extension list (extensions.txt)
+	@code --list-extensions > ./packages/vscode/extensions.txt
+
+vscode-extensions-install: ## installs Visual Studio Code extensions listed in extensions.txt file
+	@cat ./packages/vscode/extensions.txt | xargs -L1 code --install-extension
+
+.PHONY: help vscode-macos-stow vscode-extensions-save vscode-extensions-install
