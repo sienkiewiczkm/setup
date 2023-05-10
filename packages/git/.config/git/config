@@ -1,0 +1,5 @@
+[user]
+name = Kamil Sienkiewicz
+
+[include]
+path = ./aliases

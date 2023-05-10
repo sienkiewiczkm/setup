@@ -2,6 +2,9 @@
 help:
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
+git-stow: ## installs git dotfiles
+	stow git -d packages -t ~ --verbose
+
 vscode-macos-stow: ## installs vscode dotfiles (MacOS only)
 	stow vscode -d packages -t ~/Library/Application\ Support/Code/User/ --verbose
 
