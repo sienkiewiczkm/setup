@@ -41,6 +41,7 @@ brew "httpie"
 brew "hyperfine"            # benchmarking
 brew "imagemagick"          # image utilities: magick, convert, identify, mogrify etc.
 brew "insect"               # scientific calculator
+brew "jq"
 brew "llvm"                 # clang
 brew "lnav"                 # log navigator
 brew "mermaid-cli"          # chart generator
