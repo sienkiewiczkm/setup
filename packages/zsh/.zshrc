@@ -35,6 +35,7 @@ SPACESHIP_PROMPT_ORDER=(
   docker        # Docker section
   venv          # virtualenv section
   exec_time     # Execution time
+  kubectl_context
   line_sep      # Line break
   battery       # Battery level and status
   jobs          # Background jobs indicator
@@ -42,9 +43,6 @@ SPACESHIP_PROMPT_ORDER=(
   dir           # Current directory section
   char          # Prompt character
 )
-
-# initialize completions
-autoload -U compinit && compinit
 
 # Default tools
 export EDITOR=nvim
@@ -63,12 +61,14 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=12'
 # zsh options
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
+setopt INC_APPEND_HISTORY
 
 # ------------------------------------------------------------------------------
 # Aliases
 alias ..='cd ../'
-alias e='exa'
-alias ela='exa -la'
+alias e='eza'
+alias ela='eza -la'
+alias k='kubectl'
 
 # fuzzy branch checkout
 alias gs='git branch | fzf | head -n1 | xargs git switch'
@@ -88,6 +88,12 @@ alias icat="kitty +kitten icat"
 
 alias ports-tcp="lsof -nP -iTCP -sTCP:LISTEN"
 
+function klog(){
+  pod_name="$1"
+  shift
+  k logs "$pod_name" --follow $@ 2>/dev/null | lnav
+}
+
 # ------------------------------------------------------------------------------
 # Source work configuration files (may contain client secrets)
 # (N) removes `zsh: no matches found` warning
@@ -96,15 +102,22 @@ for cfgFile in ~/.zshrc.*(N) ; do
 done
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-fpath=(~/.completions $fpath)
-
 export FZF_DEFAULT_COMMAND='ag -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+fpath=(~/.completions $fpath)
+if type brew &>/dev/null; then
+  fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
+fi
 
 if [ -d "$HOME/.nvm" ]; then
   export NVM_DIR="$HOME/.nvm"
   [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh"
   [ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm"
+fi
+
+if [ -d "$HOME/bin" ]; then
+  export PATH="$PATH:$HOME/bin"
 fi
 
 . $(brew --prefix)/etc/profile.d/z.sh
