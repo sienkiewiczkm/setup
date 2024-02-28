@@ -2,7 +2,10 @@
 help:
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
-git-stow: ## installs git dotfiles
+git:
+	test -f packages/git/.config/git/secrets.gitconfig || cp packages/git/secrets.template.gitconfig packages/git/.config/git/secrets.gitconfig
+
+git-stow: git ## installs git dotfiles
 	stow git -d packages -t ~ --verbose
 
 vscode-macos-stow: ## installs vscode dotfiles (MacOS only)

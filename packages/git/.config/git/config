@@ -1,5 +1,14 @@
 [user]
 name = Kamil Sienkiewicz
 
+[merge]
+conflictStyle = zdiff3
+
 [include]
-path = ./aliases
+path = ./aliases.gitconfig
+
+[include]
+path = ./secrets.gitconfig
+
+[init]
+defaultBranch = main
