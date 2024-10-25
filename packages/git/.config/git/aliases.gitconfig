@@ -1,10 +1,15 @@
 [alias]
+  dt = difftool
   sw = switch
   cob = checkout -b
   wip = !git add . && git commit -m \"WIP commit on `date -Iminutes`\"
 
+  l = "!. ~/.githelpers && pretty_git_log"
+  lr = "!git l -20"
+
   st = status
   ds = diff --staged
+  showe = show --ext-diff
   fu = commit --fixup
   undo-commit = reset --soft HEAD~1
 
