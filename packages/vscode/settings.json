@@ -1,19 +1,4 @@
 {
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "breadcrumbs.enabled": true,
   "breadcrumbs.symbolPath": "off",
   "cSpell.language": "en-GB",
@@ -27,9 +12,7 @@
     "draggables",
     "dropzone",
     "easymotion",
-    "equalto",
     "fallback",
-    "gitlens",
     "hacky",
     "iosevka",
     "kamil",
@@ -56,10 +39,12 @@
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.autoClosingBrackets": "never",
   "editor.bracketPairColorization.enabled": true,
+  "editor.codeLens": false,
   "editor.cursorSurroundingLines": 5,
   "editor.fontFamily": "JetBrainsMono Nerd Font, Input Mono, Iosevka Nerd Font, Iosevka, Menlo, monospace",
   "editor.fontLigatures": true,
-  "editor.fontWeight": 400,
+  "editor.fontSize": 11,
+  "editor.fontWeight": 500,
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
   "editor.letterSpacing": 0,
@@ -78,94 +63,40 @@
   "editor.stickyScroll.enabled": true,
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
-  "evenBetterToml.formatter.allowedBlankLines": 2,
-  "evenBetterToml.formatter.arrayAutoCollapse": false,
   "explorer.compactFolders": false,
   "explorer.fileNesting.enabled": true,
-  "explorer.openEditors.visible": 0,
   "explorer.sortOrder": "filesFirst",
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 5000,
   "files.exclude": {
     "**/*.pyc": true
   },
+  "git.blame.editorDecoration.enabled": true,
   "git.mergeEditor": true,
-  "githubPullRequests.defaultMergeMethod": "rebase",
-  "githubPullRequests.fileListLayout": "flat",
-  "githubPullRequests.pullBranch": "never",
   "keyboard.touchbar.enabled": false,
   "markdown.preview.fontSize": 12,
   "markdown.preview.lineHeight": 1.2,
   "outline.collapseItems": "alwaysCollapse",
-  "python.analysis.extraPaths": [
-    "equalto/server"
-  ],
-  "python.linting.flake8Args": [
-    "--config=./equalto/server/setup.cfg"
-  ],
-  "python.linting.flake8CategorySeverity.C": "Error",
-  "python.linting.flake8CategorySeverity.D": "Error",
-  "python.linting.flake8CategorySeverity.W": "Error",
-  "python.linting.flake8Enabled": true,
   "search.collapseResults": "alwaysCollapse",
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font, Input Mono, Iosevka Nerd Font, Iosevka, Menlo, monospace",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontWeight": "normal",
-  "todo-tree.general.tagGroups": {},
-  "todo-tree.general.tags": [
-    "CRUMB",
-    "TODO",
-    "FIXME",
-    "HACK",
-    "[ ]",
-    "[x]"
-  ],
-  "todo-tree.highlights.customHighlight": {
-    "CRUMB": {
-      "background": "#3a3a81",
-      "foreground": "#ffffff",
-      "icon": "bookmark",
-      "type": "text-and-comment"
-    },
-    "FIXME": {
-      "background": "#c32c2c",
-      "borderRadius": "5px",
-      "fontWeight": "700",
-      "foreground": "#ffffff",
-      "icon": "tools",
-      "textDecoration": "underline",
-      "type": "text-and-comment"
-    },
-    "HACK": {
-      "background": "#c32c2c",
-      "foreground": "#ffffff",
-      "icon": "alert",
-      "type": "text-and-comment"
-    },
-    "TODO": {
-      "background": "#4a844a",
-      "fontWeight": "700",
-      "foreground": "#ffffff",
-      "textDecoration": "underline",
-      "type": "text-and-comment"
-    }
-  },
-  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
   "vim.camelCaseMotion.enable": true,
   "vim.easymotion": true,
   "vim.easymotionMarkerBackgroundColor": "#222",
-  "vim.easymotionMarkerFontWeight": 500,
+  "vim.easymotionMarkerFontWeight": "bold",
   "vim.easymotionMarkerForegroundColorOneChar": "#f0f",
   "vim.textwidth": 100,
   "vim.useSystemClipboard": true,
   "window.commandCenter": true,
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Dracula Theme",
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.value": 8,
   "workbench.editor.pinnedTabSizing": "shrink",
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.iconTheme": "vscode-icons",
   "workbench.list.horizontalScrolling": true,
-  "workbench.preferredDarkColorTheme": "Dracula",
+  "workbench.preferredDarkColorTheme": "Dracula Theme",
+  "workbench.preferredLightColorTheme": "Visual Studio Light",
   "workbench.tree.indent": 10
 }
