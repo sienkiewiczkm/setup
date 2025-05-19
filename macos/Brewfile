@@ -2,7 +2,6 @@
 # ------------------------------------------------------------------------------
 
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 
 # ------------------------------------------------------------------------------
@@ -26,15 +25,24 @@ cask "font-ubuntu-mono-nerd-font"
 # ------------------------------------------------------------------------------
 # CLI tools
 
+brew "atuin"
 brew "bitwarden-cli"
+brew "borgbackup"
 brew "cmake"
+brew "cocoapods"
+brew "colordiff"
 brew "curl"
-brew "exa"                  # ls improved; https://github.com/ogham/exa
+brew "difftastic"
+brew "eza"                  # ls improved; https://github.com/eza-community/eza
 brew "ffmpeg"               # video tools
 brew "fzf"                  # fuzzy search
 brew "gh"                   # GitHub cli
 brew "git"
+brew "git-delta"
 brew "gnupg"                # GPG
+brew "helm"
+brew "helm-docs"
+brew "helmfile"
 brew "hopenpgp-tools"       # GPG tools: hkt, hokey, hop, hot
 brew "htop"
 brew "httpie"
@@ -42,9 +50,10 @@ brew "hyperfine"            # benchmarking
 brew "imagemagick"          # image utilities: magick, convert, identify, mogrify etc.
 brew "insect"               # scientific calculator
 brew "jq"
+brew "k9s"
+brew "ledger"
 brew "llvm"                 # clang
 brew "lnav"                 # log navigator
-brew "mermaid-cli"          # chart generator
 brew "moreutils"            # chronic, vipe and others
 brew "neovim"
 brew "p7zip"                # 7z
@@ -53,58 +62,61 @@ brew "par2"                 # PAR 2.0 generation and verification tool
 brew "qrencode"             # QR code generator
 brew "rename"               # rename in CLI with regex
 brew "speedtest-cli"        # https://www.speedtest.net/apps/cli
+brew "stow"
 brew "svgo"                 # optimization tool for SVGs
 brew "the_silver_searcher"  # ag, https://github.com/ggreer/the_silver_searcher
 brew "tldr"                 # concise man pages based on examples
 brew "tmux"                 # terminal multiplexer
 brew "watch"                # watch tool to repeat command
-brew "watson"               # time measurements
 brew "wget"
 brew "ykman"                # Yubikey management
 brew "youtube-dl"           # youtube downloader
 brew "z"                    # fuzzy cd to most used places
 brew "zsh"
 
+if ENV["OWN_PERSONAL_DEVICE"]
+
+  # Empty
+
+end
+
 # ------------------------------------------------------------------------------
 # Apps
 
 cask "anki"
-cask "blender"
 cask "calibre"              # ebook management
 cask "coconutbattery"
 cask "discord"
 cask "disk-inventory-x"
 cask "firefox"
+cask "flameshot"
 cask "flux"
 cask "folx"                 # file/torrent downloader
 cask "foobar2000"
-cask "ghidra"
+cask "freecad"              # Free CAD software
 cask "gimp"
 cask "google-chrome"
-cask "gpg-suite-no-mail"
-cask "iterm2"
 cask "itsycal"
-cask "kap"                  # gif screen recorder
 cask "keepassxc"
 cask "keka"
 cask "kitty"
-cask "licecap"              # screen recording (gifs)
-cask "meld"                 # diff tool supporting 3-way merge
-cask "skitch"               # screenshot annotation tool
-cask "steam"
+cask "microsoft-edge"
+cask "obs"
+cask "obsidian"
+cask "omnidisksweeper"
+cask "openscad"             # 3D CAD using code
+cask "super-productivity"
+cask "table-tool"
 cask "veracrypt"            # encryption
 cask "visual-studio-code"
 cask "vlc"
 cask "vox"                  # winamp-like audio player
 
-# 3D Printing
-cask "freecad"              # Free CAD software
-cask "creality-slicer"      # slicer from creality based on Cura
-cask "openscad"             # 3D CAD using code
-cask "ultimaker-cura"       # good slicer
+if ENV["OWN_PERSONAL_DEVICE"]
 
-# ------------------------------------------------------------------------------
-# Archived stuff - sometimes may be useful
-# brew "temurin"              # OpenJDK (Java Development Kit) binaries, https://adoptium.net/
-# cask "balenaetcher"         # etching ISOs on USB sticks
-# cask "db-browser-for-sqlite"
+  cask "blender"
+  cask "ghidra"
+  cask "steam"
+  cask "qbittorrent"
+
+end
