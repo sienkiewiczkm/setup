@@ -8,6 +8,9 @@ git:
 git-stow: git ## installs git dotfiles
 	stow git -d packages -t ~ --verbose
 
+aerospace-stow: git ## installs aerospace dotfiles
+	stow aerospace -d packages -t ~ --verbose
+
 vscode-macos-stow: ## installs vscode dotfiles (MacOS only)
 	stow vscode -d packages -t ~/Library/Application\ Support/Code/User/ --verbose
 
